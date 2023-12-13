@@ -7,13 +7,45 @@ geo standards, such as the "Rijksdriehoek" (RD) coordinate system.
 
 ## Usage
 
+The library ships constants/utilities that can be used both in imperative, vanilla JS or with UI
+libraries like React.
+
 ### In vanilla JS
 
-...
+```js
+import * as L from 'leaflet';
+import {CRS_RD, TILE_LAYER_RD} from '@open-formulieren/leaflet-tools';
+
+const map = L.map('my-map', {
+  continuousWorld: true,
+  crs: CRS_RD, // use Rijksdriehoek coordinate system
+  attributionControl: true,
+  center: [52.1326332, 5.291266], // must be provided as EPSG:4326 coordinates, is transformed via `crs` option
+  zoom: 3, // value between 0-13
+});
+const {url, ...options} = TILE_LAYER_RD;
+const tiles = L.tileLayer(url, options);
+map.addLayer(tiles);
+```
 
 ### With React
 
-...
+```jsx
+import {MapContainer, TileLayer} from 'react-leaflet';
+import {CRS_RD, TILE_LAYER_RD} from '@open-formulieren/leaflet-tools';
+
+const MyMap = () => (
+  <MapContainer
+    continuousWorld
+    crs={CRS_RD}
+    attributionControl
+    center={[52.1326332, 5.291266]}
+    zoom={3}
+  >
+    <TileLayer {...TILE_LAYER_RD} />
+  </MapContainer>
+);
+```
 
 ## Background
 
