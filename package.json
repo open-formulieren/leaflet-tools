@@ -1,0 +1,27 @@
+{
+  "name": "@open-formulieren/leaflet-tools",
+  "version": "1.0.0",
+  "description": "Shared utilities for Leaflet maps and Dutch (NL) geo standards",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/open-formulieren/leaflet-tools.git"
+  },
+  "keywords": [
+    "leaflet",
+    "Rijksdriehoek",
+    "geo",
+    "gis",
+    "RD",
+    "NL"
+  ],
+  "author": "Maykin Media <support@maykinmedia.nl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/open-formulieren/leaflet-tools/issues"
+  },
+  "homepage": "https://github.com/open-formulieren/leaflet-tools#readme"
+}
