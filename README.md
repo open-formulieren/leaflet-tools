@@ -54,7 +54,7 @@ configuration that require some context to properly judge them and recording tha
 arguably the biggest benefit of a standalone library/repository.
 
 The
-[Geoformum](https://geoforum.nl/t/betrouwbare-bron-voor-proj4-definitie-van-rd-new-epsg-28992/5144)
+[Geoforum](https://geoforum.nl/t/betrouwbare-bron-voor-proj4-definitie-van-rd-new-epsg-28992/5144)
 thread is quite informative, as it points to the PROJ4 projection that is defined in this library,
 which itself is taken from an examples repository by @arbakker. It points out a number of issues:
 
