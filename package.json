@@ -2,11 +2,15 @@
   "name": "@open-formulieren/leaflet-tools",
   "version": "1.0.0",
   "description": "Shared utilities for Leaflet maps and Dutch (NL) geo standards",
-  "main": "lib/index.js",
+  "main": "./lib/index.js",
+  "module": "./lib/index.js",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write 'src/**/*'",
+    "checkformat": "prettier --check 'src/**/*'"
   },
+  "files": ["lib/"],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/open-formulieren/leaflet-tools.git"
@@ -36,6 +40,7 @@
     "@types/proj4": "^2.5.5",
     "@types/proj4leaflet": "^1.0.10",
     "leaflet": "^1.9.4",
+    "prettier": "^3.1.1",
     "typescript": "^5.3.3"
   }
 }
