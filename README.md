@@ -17,7 +17,6 @@ import * as L from 'leaflet';
 import {CRS_RD, TILE_LAYER_RD} from '@open-formulieren/leaflet-tools';
 
 const map = L.map('my-map', {
-  continuousWorld: true,
   crs: CRS_RD, // use Rijksdriehoek coordinate system
   attributionControl: true,
   center: [52.1326332, 5.291266], // must be provided as EPSG:4326 coordinates, is transformed via `crs` option
@@ -35,13 +34,7 @@ import {MapContainer, TileLayer} from 'react-leaflet';
 import {CRS_RD, TILE_LAYER_RD} from '@open-formulieren/leaflet-tools';
 
 const MyMap = () => (
-  <MapContainer
-    continuousWorld
-    crs={CRS_RD}
-    attributionControl
-    center={[52.1326332, 5.291266]}
-    zoom={3}
-  >
+  <MapContainer crs={CRS_RD} attributionControl center={[52.1326332, 5.291266]} zoom={3}>
     <TileLayer {...TILE_LAYER_RD} />
   </MapContainer>
 );
