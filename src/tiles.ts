@@ -14,7 +14,7 @@ export const buildTileLayerEndpoint = (
 /**
  * A pre-configured tile layer for the Rijksdriehoek (RD) projection (EPSG:28992).
  *
- * This used the standard tile layer with attribution enabled, while limiting the zoom
+ * This uses the standard tile layer with attribution enabled, while limiting the zoom
  * level between 1 and 13.
  *
  * @note
