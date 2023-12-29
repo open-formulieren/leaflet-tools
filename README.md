@@ -88,7 +88,7 @@ using this library.
 
 **References**
 
-- https://github.com/arbakker/pdok-js-map-examples/blob/master/leaflet-geojson-wmts-epsg28992/index.js
+- https://github.com/arbakker/pdok-js-map-examples/blob/c9ee1c/leaflet-geojson-wmts-epsg28992/index.js
 - https://nlmaps.nl/
   https://github.com/PDOK/nlmaps/blob/cf2ba6b825853e8bfc34ed3c7b7ff779dda722e9/packages/nlmaps/test/browser-test.js#L36
 - https://github.com/geoloep/Leaflet.RD/blob/master/src/leaflet.rd.js

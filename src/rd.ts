@@ -7,7 +7,7 @@ import 'proj4leaflet';
  * @note
  *
  * This code is heavily inspired on
- * https://github.com/arbakker/pdok-js-map-examples/blob/master/leaflet-geojson-wmts-epsg28992/index.js,
+ * https://github.com/arbakker/pdok-js-map-examples/blob/c9ee1c/leaflet-geojson-wmts-epsg28992/index.js,
  * but there are many caveats expressed on
  * https://geoforum.nl/t/betrouwbare-bron-voor-proj4-definitie-van-rd-new-epsg-28992/5144/16.
  *
@@ -53,7 +53,7 @@ const RESOLUTIONS = [
  *
  * @see
  *
- * https://github.com/arbakker/pdok-js-map-examples/blob/master/leaflet-geojson-wmts-epsg28992/index.js
+ * https://github.com/arbakker/pdok-js-map-examples/blob/c9ee1c/leaflet-geojson-wmts-epsg28992/index.js
  */
 const RD_PROJECTION = `+proj=sterea\
 +lat_0=52.15616055555555\
